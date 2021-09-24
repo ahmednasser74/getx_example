@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
-
+///extends from GetView<HomeController> to get all fields of HomeController by controller.
 class Home extends GetView<HomeController> {
   const Home({Key? key}) : super(key: key);
 
@@ -22,6 +22,8 @@ class Home extends GetView<HomeController> {
                 onPressed: controller.decrementCounterByObserving,
                 icon: const Icon(Icons.remove),
               ),
+              /// Obx is observing to .obs variables im my controller
+              /// and listen to any changes of this variables
               Obx(
                 () => Text(controller.counterObserving.toString()),
               ),
@@ -40,6 +42,7 @@ class Home extends GetView<HomeController> {
                 onPressed: homeController.decrementCounterByGetBuilder,
                 icon: const Icon(Icons.remove),
               ),
+              /// GetBuilder is the same of Consumer in provider
               GetBuilder<HomeController>(
                 builder: (_) => Text(homeController.counter.toString()),
               ),
