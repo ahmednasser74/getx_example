@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
 ///extends from GetView<HomeController> to get all fields of HomeController by controller.
-class Home extends GetView<HomeController> {
-  const Home({Key? key}) : super(key: key);
+class HomeScreen extends GetView<HomeController> {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

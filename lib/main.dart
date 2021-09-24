@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialBinding: ControllerBinding(),
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const Home(),
+      home: const HomeScreen(),
     );
   }
 }

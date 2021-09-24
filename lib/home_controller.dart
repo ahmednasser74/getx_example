@@ -5,13 +5,13 @@ class HomeController extends GetxController {
   /// .obs change variable data type and returned Rx from variable type like
   /// this example return RxInt and to get integer we need to call myVariable.value like in incrementCounterByObserving();
   RxInt counterObserving = 0.obs;
+  int counter = 0;
 
   /// .value returned the data type of .obs variable like this example
   /// .value of counterObserving is integer
   void incrementCounterByObserving() => counterObserving.value++;
 
   void decrementCounterByObserving() => counterObserving.value--;
-  int counter = 0;
 
   void incrementCounterByGetBuilder() {
     counter++;
