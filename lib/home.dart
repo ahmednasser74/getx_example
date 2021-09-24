@@ -7,7 +7,7 @@ class Home extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    ///Get.find<>(); like Provider.of<MyProvider>(context);
+    ///Get.find<MyController>(); like Provider.of<MyProvider>(context);
     final homeController = Get.find<HomeController>();
     return Scaffold(
       appBar: AppBar(title: const Text('GetX Example')),
