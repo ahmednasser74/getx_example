@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'controller_binding.dart';
-import 'home.dart';
+import 'home_screen.dart';
 
 void main() {
   runApp(const MyApp());
